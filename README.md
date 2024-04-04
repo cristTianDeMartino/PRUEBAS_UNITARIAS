@@ -1,8 +1,12 @@
-# Pruebas Unitarias
+# PRUEBAS UNITARIAS
 
-Esto proyecto consiste en mostrar las pruebas unitarias.
+  como parte de mi proyecto de fundamentos  en ingenieria en software vengo a  mostrar la importancia y su implementacion de las pruebas  del software en sus respectivos proyectos sin embargo vamos a  retroceder un poco  y vamos a  ver en un poco en general  acerca de las pruebas de software y su evolucion del mismo.
+   
 
 ```py
 def x():
     return 5
 ```
+
+- istruzioni per creazione virtual env
+- creare il file requirements.txt
