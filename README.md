@@ -1,7 +1,8 @@
 # PRUEBAS UNITARIAS
 
-  como parte de mi proyecto de fundamentos  en ingenieria en software vengo a  mostrar la importancia y su implementacion de las pruebas  del software en sus respectivos proyectos sin embargo vamos a  retroceder un poco  y vamos a  ver en un poco en general  acerca de las pruebas de software y su evaluación del mismo.
-  EVALUACION DEL SOFTWARE
+  como parte de mi proyecto de fundamentos en ingenieria en software vengo a mostrar la importancia y su implementacion de las pruebas unitarias del software en sus respectivos proyectos sin embargo vamos a retroceder un poco y vamos a  ver en un poco en general  acerca de las pruebas de software y su evaluación del mismo.
+
+  # EVALUACION DEL SOFTWARE
 
    a la hora de  evaluar un software existen dos tipos:
 
@@ -26,10 +27,26 @@
      4) pruebas de aceptación.
 
       
+  todas estas pruebas son importantes a la hora de hacer un proyecto de software ya que fuero creadas justamente para la necesidad de garantizar la calidad y fiabilidad de los programas informáticos, sin embargo nosotros  haremos enfasis y hablaremos mas en especifico sobre las pruebas unitarias ya que son una parte muy importante a la hora de probar el software.
+
+  # PLAN DE PRUEBAS
+       ////////
+
+
+ # REQUISITOS PREVIOS
+   
+ ahora ya sabemos mas acerca de las pruebas y las pruebas unitarias en general pero para que se entienda de mejor manera voy hacer una prueba muy sencilla utilizando python  y la libreria de pytest.
+ 
+  sin embargo para que la prueba sea mas fluida y entendible es recomendable que el que vaya a hacer la prueba tenga los siguientes conocimientos bien marcados.
+
+  1)  saber  un lenguaje de programacion ( en este caso  python ya que sera el lenguaje que utilizaremos para hacer la prueba)
+  2)  crear y activar  un entorno virtual (Virtualenv).
+
+
 
 
   #
-   
+  
    
 
 
