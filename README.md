@@ -13,9 +13,20 @@
    
    Proceso de evaluación del SW al final del proceso de desarrollo para asegurar el cumplimiento de necesidades del cliente. ¿Estamos creando el producto correcto?. Revisión del programa conforme a las expectativas del usuario.basicamente al final del proceso se hace una evaluacion para ver si el programa corre perfectamente o tiene errores.
 
-  los objetivos de V&V son básicamente descubrir los defectos del sistema, y determinar cuando un sistema es útil o no en una situación.existen  dos tecnicas para la evaluación del  SW.
+  los objetivos de V&V son básicamente descubrir los defectos del sistema, y determinar cuando un sistema es útil o no en una situación. Existen  dos tecnicas para la evaluación del  SW.
 
-  las tecnicas estaticas
+  1) las tecnicas estaticas:
+  consisten en revisiones de requerimientos, diseños y lista de programas.
+
+  2) las tecnicas dinamicas(pruebas):
+     se estudia  como se comporta el sistema a la hora de ingresar datos:
+     1) pruebas unitarias.
+     2) pruebas de integración.
+     3) pruebas de sistema.
+     4) pruebas de aceptación.
+
+      
+
 
   #
    
