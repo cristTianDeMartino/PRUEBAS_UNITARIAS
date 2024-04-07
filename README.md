@@ -91,7 +91,7 @@ paso 2:
 el imputx y el imputy  indica los 2 valores que espera ( los numeros que se van a sumar) y el parametro expected  es el valor que se espera recibir sin embargo necesita  unos parametros para que pueda probar  mediante pytest tenemos un decorador @pytest.mark.parametrize el cual le insertaremos una serie de parametros en una lista y dentro pondremos duplas con valores( los valores puedes poner los que tu quieras).abajo del parametrize tenemos que  volver  a escribir dentro comillas los imputx y el expected tal que asi :  " input_x, input_y, expected", para que quede mas claro adjunto la foto para que se entienda mejor el orden de cada parametro. ( foto) nuevamente volver a ejecutar pytest -v para ver si las pruebas pasaron correctamente.
 
 
-  #  3. simular una base de datos para comprobar credenciales
+  ##  3. simular una base de datos para comprobar credenciales
   paso 1:
 
   primero tenemos que regresar al main para escribir la nueva función. adjunto la imagen ( foto)
