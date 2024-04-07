@@ -1,5 +1,5 @@
 import pytest
-from src.main import sum, is_greater_than
+from src.main import sum, is_greater_than, login
 from src.utilities import is_odd
 
 
@@ -30,3 +30,16 @@ def test_is_greater_than():
     
 def test_sum_params(input_x, input_y, expected):   
     assert sum(input_x, input_y) == expected
+    
+    
+    
+    
+def test_login_pass():
+    login_passes=login("alumnouady","uady1234")
+    assert   login_passes 
+    
+def test_login_fail():
+    login_fails=login("alumnouadytete","uady12343412")
+    assert not login_fails
+    
+    
