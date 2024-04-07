@@ -50,7 +50,7 @@
 #  EJEMPLOS DE PRUEBAS UNITARIAS
 
 
-  ## funcion sum y is_greather_than
+  ##  1. funcion sum y is_greather_than
  paso 1:
  
   para empezar vamos a crear otra carpeta en la cual crearemos un archivo el cual sera nuestro main(importante poner el .py que es la terminacion de python)
@@ -79,7 +79,7 @@ paso 6:
 
 ahora  abrimos la consola/terminal y ejecutamos pytest (foto) una vez ejecutado el pytest lo que hace es  detectar todos los archivos de prueba y te dice  las pruebas que pasaron y las que no.  ( si agregas  -v al comando pytest te da un resultado mas detallado de todas las pruebas)
 
- ##   utilizar las funciones sum y is_greather_than con parametros
+ ##   2. utilizar las funciones sum y is_greather_than con parametros
 paso 1:
 
  el siguiente paso es utilizar una nueva   opcion que nos ofrece pytest por lo que primero vamos a importar pytest y luego  vamos a  volver a  definir la funcion test sum pero esta vez  con params    justo como lo muestro en la foto de abajo ( foto)
@@ -91,7 +91,7 @@ paso 2:
 el imputx y el imputy  indica los 2 valores que espera ( los numeros que se van a sumar) y el parametro expected  es el valor que se espera recibir sin embargo necesita  unos parametros para que pueda probar  mediante pytest tenemos un decorador @pytest.mark.parametrize el cual le insertaremos una serie de parametros en una lista y dentro pondremos duplas con valores( los valores puedes poner los que tu quieras).abajo del parametrize tenemos que  volver  a escribir dentro comillas los imputx y el expected tal que asi :  " input_x, input_y, expected", para que quede mas claro adjunto la foto para que se entienda mejor el orden de cada parametro. ( foto) nuevamente volver a ejecutar pytest -v para ver si las pruebas pasaron correctamente.
 
 
-  # simular una base de datos para comprobar credenciales
+  #  3. simular una base de datos para comprobar credenciales
   paso 1:
 
   primero tenemos que regresar al main para escribir la nueva función. adjunto la imagen ( foto)
