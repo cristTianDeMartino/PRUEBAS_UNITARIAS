@@ -31,7 +31,7 @@
   todas estas pruebas son importantes a la hora de hacer un proyecto de software ya que fuero creadas justamente para la necesidad de garantizar la calidad y fiabilidad de los programas informáticos, sin embargo nosotros  haremos enfasis y hablaremos mas en especifico sobre las pruebas unitarias ya que son una parte muy importante a la hora de probar el software.
 
   # PLAN DE PRUEBAS
-       <a href="https://imgbb.com/"><img src="https://i.ibb.co/zV89rXP/pruebas.jpg" alt="pruebas" border="0"></a>
+      https://ibb.co/1GsyLrR
 
 
  # REQUISITOS PREVIOS
