@@ -161,3 +161,17 @@ dentro de test_languageModel vamos a comprobar priemro que  esa lista que  se no
   paso 6: 
   
   abrir la terminar y ejecutar pytest -v  vamos  a ver que todos han pasado corectamente ya que primero la lista no es NONE despues existen elementos  y tambien cada elemento su longitud es mayor a 0. esto fallaria si por ejemplo uno de los elementos lo quitamos y dejamos una cadena de caracteres vacia. vemos que la 3 prueba fallo porque la longitud de un elemento en particular  ( en este caso   el elemento que borramos) fue 0 por lo tanto fallo. 
+
+
+
+
+ #  CONCLUSIÓN 
+
+ en  resumen La evaluación del software se divide en verificación (asegurar que se desarrolle según especificaciones) y validación (comprobar si cumple las necesidades del cliente). Las técnicas incluyen estáticas (revisiones) y dinámicas (pruebas unitarias, de integración, de sistema y de aceptación).  Las pruebas unitarias son fundamentales para garantizar la calidad del software, ya que se enfocan en probar componentes individuales para asegurar su correcto funcionamiento. Esto contribuye a la fiabilidad del producto final y lo convierte en un proyecto mas solido y fiable a la hora de presentarlo al cliente.
+
+
+
+
+  #  REFERENCIAS 
+   https://www.youtube.com/watch?v=JZ0TMkwMgp8&ab_channel=UskoKruM2010
+   https://docs.pytest.org/en/latest/
