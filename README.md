@@ -62,8 +62,17 @@ __init__.py
  
 paso 3: 
 
-en nuestro documento main vamos  hacer dos funciones muy sencillas para observar como funcionan las pruebas
-( copiar las funciones que aparecen abajo y pegarlas en el main)
+en nuestro documento main vamos  hacer dos funciones muy sencillas  para observar como funcionan las pruebas en este caso vamos hacer una suma y comparar dos numeros para encontrar el mayor( copiar las funciones que aparecen abajo y pegarlas en el main)
+
+ ```py
+def sum(x,  y):
+    return x + y 
+
+
+def is_greater_than(number_1, number_2):
+    return number_1 > number_2 
+```
+
 
 paso 4:
 
@@ -74,27 +83,59 @@ paso 5:
 vamos a  importar las 2 funciones que hicimos anteriormente en el main para probarlas y ver como funcionan
 empezaremos con la funcion sum tal como se muestra en la imagen, utilizaremos la palabra clave assert para indicar 
 que un valor debe ser igual a otro, aqui es donde vamos a comprobar si el resultado de una funcion es el esperado.
+ ( importacion de las funciones)
+```py
+ import pytest
+from src.main import sum, is_greater_than, login, is_odd, is_even
+```
+```py
+def test_sum():
+    assert sum(2, 5) == 7
 
-paso 6: 
-
+def test_is_greater_than():
+    assert is_greater_than(10, 2)
+    assert is_greater_than(-2, -6)
+    assert is_greater_than(10, 22) == False    
+ 
+```
+paso 6:
 ahora  abrimos la consola/terminal y ejecutamos pytest (foto) una vez ejecutado el pytest lo que hace es  detectar todos los archivos de prueba y te dice  las pruebas que pasaron y las que no.  ( si agregas  -v al comando pytest te da un resultado mas detallado de todas las pruebas)
 
 ## 3. utilizar las funciones odd y even ( par e impar)
 paso 1: 
 
-definimos las funciones de odd y even, para el caso del odd sabemos que cualquier numero  dividido entre 2 y que su residuo sea 1 es un numero impar ( tal como esta en la imagen)
+definimos las funciones de odd y even en el main. para el caso del odd sabemos que cualquier numero  dividido entre 2 y que su residuo sea 1 es un numero impar 
+```py
+def is_odd(num):
+    # returns true if number is odd
+    return num % 2 == 1
+```
 
 paso 2:
 
- el even es mas sencillos se puede hacer de dos formas  la primera es usando el mismo metodo que el odd simplemente en vez de poner el 1 en el residuo ponemos 0 ya que  cualquier numero dividido entre 2 nos tiene que dar de residuo 0 o la otra forma es   utilizando el odd y negarlo, por lo tanto  si odd == false  entonces es par ( tal como se muestra en la imagen)
+ el even es mas sencillos se puede hacer de dos formas  la primera es usando el mismo metodo que el odd simplemente en vez de poner el 1 en el residuo ponemos 0 ya que  cualquier numero dividido entre 2 nos tiene que dar de residuo 0 o la otra forma es   utilizando el odd y negarlo, por lo tanto  si odd == false  entonces es par  tal como se muestra  a continuación.
+ ```py
+ def is_even(num):
+    # returns true if number is even
+    return is_odd(num) == False
+______________________________________
+def is_even(num):
+  return num % 2== 0
 
+```
 
 paso 3:
 
   vamos al test main  para importar las dos funciones donde importamos anteriormente las  de suma y greather than.
-  seguidamente definimos la variable de   preferencia test_is_odd_even y con la ayuda del assert le damos los valores que   queremos probar  tanto con el odd como con el even.( foto)
+  seguidamente definimos la variable de   preferencia test_is_odd_even y con la ayuda del assert le damos los valores que   queremos probar  tanto con el odd como con el even.
+  ```py
+  def test_is_odd_even():
+    assert is_odd(1)
+    assert is_odd(3)
+    assert is_even(7) == False
+    assert is_even(4)
 
-
+```
  ##   4. utilizar las funciones sum y is_greather_than con parametros
 paso 1:
 
@@ -161,6 +202,14 @@ dentro de test_languageModel vamos a comprobar priemro que  esa lista que  se no
   paso 6: 
   
   abrir la terminar y ejecutar pytest -v  vamos  a ver que todos han pasado corectamente ya que primero la lista no es NONE despues existen elementos  y tambien cada elemento su longitud es mayor a 0. esto fallaria si por ejemplo uno de los elementos lo quitamos y dejamos una cadena de caracteres vacia. vemos que la 3 prueba fallo porque la longitud de un elemento en particular  ( en este caso   el elemento que borramos) fue 0 por lo tanto fallo. 
+
+
+## puntos importantes  a tener en cuenta
+
+   1. tener mucho cuidado a la hora de hacer los paquetes,asegurarse de que esten en su sitio y en su respectiva carpeta y que tenga todos los signos incluyendo el .py,  si no es el caso te saldria un error de este tipo (foto)
+
+
+
 
 
 
