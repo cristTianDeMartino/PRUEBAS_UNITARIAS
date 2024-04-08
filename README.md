@@ -85,8 +85,8 @@ empezaremos con la funcion sum tal como se muestra en la imagen, utilizaremos la
 que un valor debe ser igual a otro, aqui es donde vamos a comprobar si el resultado de una funcion es el esperado.
  ( importacion de las funciones)
 ```py
- import pytest
-from src.main import sum, is_greater_than, login, is_odd, is_even
+ 
+from src.main import sum, is_greater_than
 ```
 ```py
 def test_sum():
@@ -129,6 +129,8 @@ paso 3:
   vamos al test main  para importar las dos funciones donde importamos anteriormente las  de suma y greather than.
   seguidamente definimos la variable de   preferencia test_is_odd_even y con la ayuda del assert le damos los valores que   queremos probar  tanto con el odd como con el even.
   ```py
+  from src.main import sum, is_greater_than,  is_odd, is_even
+
   def test_is_odd_even():
     assert is_odd(1)
     assert is_odd(3)
@@ -139,20 +141,46 @@ paso 3:
  ##   4. utilizar las funciones sum y is_greather_than con parametros
 paso 1:
 
- el siguiente paso es utilizar una nueva   opcion que nos ofrece pytest por lo que primero vamos a importar pytest y luego  vamos a  volver a  definir la funcion test sum pero esta vez  con params    justo como lo muestro en la foto de abajo ( foto)
-
-
+ el siguiente paso es utilizar una nueva   opcion que nos ofrece pytest por lo que primero vamos a importar pytest y luego  vamos a  volver a  definir la funcion test sum pero esta vez  con params, todo esto en el documento de test_main justo como lo muestro en la parte de abajo
+ ```py
+ import pytest
+def test_sum_params(input_x, input_y, expected):   
+   
+```
   
 paso 2:  
 
-el imputx y el imputy  indica los 2 valores que espera ( los numeros que se van a sumar) y el parametro expected  es el valor que se espera recibir sin embargo necesita  unos parametros para que pueda probar  mediante pytest tenemos un decorador @pytest.mark.parametrize el cual le insertaremos una serie de parametros en una lista y dentro pondremos duplas con valores( los valores puedes poner los que tu quieras).abajo del parametrize tenemos que  volver  a escribir dentro comillas los imputx y el expected tal que asi :  " input_x, input_y, expected", para que quede mas claro adjunto la foto para que se entienda mejor el orden de cada parametro. ( foto) nuevamente volver a ejecutar pytest -v para ver si las pruebas pasaron correctamente.
+el imputx y el imputy  indica los 2 valores que espera ( los numeros que se van a sumar) y el parametro expected  es el valor que se espera recibir sin embargo necesita  unos parametros para que pueda probar  mediante pytest tenemos un decorador @pytest.mark.parametrize el cual le insertaremos una serie de parametros en una lista y dentro pondremos duplas con valores( los valores puedes poner los que tu quieras).abajo del parametrize tenemos que  volver  a escribir dentro comillas los imputx y el expected tal que asi :  " input_x, input_y, expected", para que quede mas claro adjunto la foto para que se entienda mejor el orden de cada parametro.
+```py
+ import pytest
+ @pytest.mark.parametrize(
+     "input_x, input_y, expected",
+     [
+         (5, 1, 6),
+         (6, sum(4, 2), 12),
+         (sum(19, 1), 15, 35),
+         (-7, 10, sum(-7, 10))
+     ]
+ )
+
+def test_sum_params(input_x, input_y, expected):   
+    assert sum(input_x, input_y) == expected
+```
+nuevamente volver a ejecutar pytest -v para ver si las pruebas pasaron correctamente.
 
 
   ##  5. simular una base de datos para comprobar credenciales
+
   paso 1:
 
-  primero tenemos que regresar al main para escribir la nueva función. adjunto la imagen ( foto)
-    
+  primero tenemos que regresar al main para escribir la nueva función. 
+```py
+  def  login(username, password):
+    if  ((username == "alumnouady") and  (password == "uady1234")):
+         return True
+    else:
+        return False
+  ```  
 
 
  esto nos va a regresar verdadero siempre y cuando nuestro username  y nuestra password sean las mismas que hayamos ingresado anteriormente, en caso de que no se cumpla uno de los dos  nos regresaria a falso.
@@ -160,8 +188,10 @@ el imputx y el imputy  indica los 2 valores que espera ( los numeros que se van 
 
  paso 2:
 
- ahora regresamos al test main para hacer la prueba importando en la parte superior (donde  se importaron  el sum y el greather than) para que pueda hacerse la prueba.( foto)
-
+ ahora regresamos al test main para hacer la prueba importando en la parte superior (donde  se importaron  el sum y el greather than) para que pueda hacerse la prueba.
+ ```py
+ from src.main import sum, is_greater_than, __login__, is_odd, is_even
+```
  paso 3: 
  
   definimos el  test login (), en la siguiente linea hacemos una variable en este caso login passed que sea igual a login  y le pasamos los valores corectos es decir el nombre de usuario y la contraseña tal como aparece en la foto.( foto)
