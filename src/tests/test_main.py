@@ -1,16 +1,19 @@
 import pytest
-from src.main import sum, is_greater_than, login
-from src.utilities import is_odd
+from src.main import sum, is_greater_than, login, is_odd, is_even
+
 
 
 def test_sum():
     assert sum(2, 5) == 7
 
-def test_is_odd():
+def test_is_odd_even():
     assert is_odd(1)
     assert is_odd(3)
-    assert is_odd(7)
-    assert is_odd(4)== False
+    assert is_even(7) == False
+    assert is_even(4)
+    
+    
+
        
 def test_is_greater_than():
     assert is_greater_than(10, 2)
