@@ -67,16 +67,16 @@
 
 
   ##  1. funcion sum y is_greather_than
- paso 1:
+** paso 1:**
  
   para empezar vamos a crear otra carpeta en la cual crearemos un archivo el cual sera nuestro main(importante poner el .py que es la terminacion de python)
 
- paso 2:
+ **paso 2:**
  
   vamos a crear otro documento porque lo querremos tomar como paquete por lo que es importante llamarlo :
 __init__.py
  
-paso 3: 
+**paso 3:** 
 
 en nuestro documento main vamos  hacer dos funciones muy sencillas  para observar como funcionan las pruebas en este caso vamos hacer una suma y comparar dos numeros para encontrar el mayor( copiar las funciones que aparecen abajo y pegarlas en el main)
 
@@ -90,11 +90,11 @@ def is_greater_than(number_1, number_2):
 ```
 
 
-paso 4:
+**paso 4:**
 
  vamos a crear una subcarpeta  con el nombre test( ya que en esta carpeta haremos las pruebas) y  vamos a repetir el paso 2, es decir vamos a crear un documento que se llame  test_main y  le agregamos el mismo documento para que se convierta en un paquete.(foto)
 
-paso 5: 
+**paso 5:** 
 
 vamos a  importar las 2 funciones que hicimos anteriormente en el main para probarlas y ver como funcionan
 empezaremos con la funcion sum tal como se muestra en la imagen, utilizaremos la palabra clave assert para indicar 
@@ -114,11 +114,11 @@ def test_is_greater_than():
     assert is_greater_than(10, 22) == False    
  
 ```
-paso 6:
+**paso 6:**
 ahora  abrimos la consola/terminal y ejecutamos pytest (foto) una vez ejecutado el pytest lo que hace es  detectar todos los archivos de prueba y te dice  las pruebas que pasaron y las que no.  ( si agregas  -v al comando pytest te da un resultado mas detallado de todas las pruebas)
 
 ## 3. utilizar las funciones odd y even ( par e impar)
-paso 1: 
+**paso 1: **
 
 definimos las funciones de odd y even en el main. para el caso del odd sabemos que cualquier numero  dividido entre 2 y que su residuo sea 1 es un numero impar 
 ```py
@@ -127,7 +127,7 @@ def is_odd(num):
     return num % 2 == 1
 ```
 
-paso 2:
+**paso 2:**
 
  el even es mas sencillos se puede hacer de dos formas  la primera es usando el mismo metodo que el odd simplemente en vez de poner el 1 en el residuo ponemos 0 ya que  cualquier numero dividido entre 2 nos tiene que dar de residuo 0 o la otra forma es   utilizando el odd y negarlo, por lo tanto  si odd == false  entonces es par  tal como se muestra  a continuación.
  ```py
@@ -140,7 +140,7 @@ def is_even(num):
 
 ```
 
-paso 3:
+**paso 3:**
 
   vamos al test main  para importar las dos funciones donde importamos anteriormente las  de suma y greather than.
   seguidamente definimos la variable de   preferencia test_is_odd_even y con la ayuda del assert le damos los valores que   queremos probar  tanto con el odd como con el even.
@@ -155,7 +155,7 @@ paso 3:
 
 ```
  ##   4. utilizar las funciones sum y is_greather_than con parametros
-paso 1:
+**paso 1:**
 
  el siguiente paso es utilizar una nueva   opcion que nos ofrece pytest por lo que primero vamos a importar pytest y luego  vamos a  volver a  definir la funcion test sum pero esta vez  con params, todo esto en el documento de test_main justo como lo muestro en la parte de abajo
  ```py
@@ -208,6 +208,7 @@ nuevamente volver a ejecutar pytest -v para ver si las pruebas pasaron correctam
  ```py
  from src.main import sum, is_greater_than, __login__, is_odd, is_even
 ```
+
  paso 3: 
  
   definimos el  test login (), en la siguiente linea hacemos una variable en este caso login passed que sea igual a login  y le pasamos los valores corectos es decir el nombre de usuario y la contraseña tal como aparece en la foto.
@@ -229,10 +230,10 @@ def test_login_fail():
     assert not login_fails
 ```
 
+
 ## puntos importantes  a tener en cuenta
 
-   1. tener mucho cuidado a la hora de hacer los paquetes,asegurarse de que esten en su sitio y en su respectiva carpeta y que tenga todos los signos incluyendo el .py.
-
+   1. tener mucho cuidado a la hora de hacer los paquetes,asegurarse de que esten en su sitio y en su respectiva carpeta y que tenga todos los signos incluyendo el .py
   2.  verificar los lugares a la hora de copiar el codigo, al ser python el lugar en el que se encuentra cada variable importa muchisimo
   
 
