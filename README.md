@@ -194,14 +194,29 @@ nuevamente volver a ejecutar pytest -v para ver si las pruebas pasaron correctam
 ```
  paso 3: 
  
-  definimos el  test login (), en la siguiente linea hacemos una variable en este caso login passed que sea igual a login  y le pasamos los valores corectos es decir el nombre de usuario y la contraseña tal como aparece en la foto.( foto)
+  definimos el  test login (), en la siguiente linea hacemos una variable en este caso login passed que sea igual a login  y le pasamos los valores corectos es decir el nombre de usuario y la contraseña tal como aparece en la foto.
+
+    ```py
+   def test_login_pass():
+    login_passes=login("alumnouady","uady1234")
+    assert   login_passes 
+    
+def test_login_fail():
+    login_fails=login("alumnouadytete","uady12343412")
+    assert not login_fails
+    ``` 
 
 
 
 paso 4: 
 
-crearemos otro test pero esta vez para cuando  vaya a ser falso es decir  lo unico que cambiaremos es el nombre de la variable ( de passed a  fails),  el nombre de usuario o la contraseña y el assert le agregaremos el not ¿porque? porque lo que estamos buscando es que la prueba nos retorne a falso y eso lo podemos hacer con el uso del not  (foto)
+crearemos otro test pero esta vez para cuando  vaya a ser falso es decir  lo unico que cambiaremos es el nombre de la variable ( de passed a  fails),  el nombre de usuario o la contraseña y el assert le agregaremos el not ¿porque? porque lo que estamos buscando es que la prueba nos retorne a falso y eso lo podemos hacer con el uso del not  
 
+```py
+def test_login_fail():
+    login_fails=login("alumnouadytete","uady12343412")
+    assert not login_fails
+```
 
 
 
@@ -210,7 +225,8 @@ crearemos otro test pero esta vez para cuando  vaya a ser falso es decir  lo uni
 
    1. tener mucho cuidado a la hora de hacer los paquetes,asegurarse de que esten en su sitio y en su respectiva carpeta y que tenga todos los signos incluyendo el .py,  si no es el caso te saldria un error de este tipo (foto)
 
-
+  2.  verificar los lugares a la hora de copiar el codigo, al ser python el lugar en el que se encuentra cada variable importa muchisimo
+  
 
 
 
