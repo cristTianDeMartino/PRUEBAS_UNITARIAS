@@ -213,22 +213,22 @@ nuevamente volver a ejecutar pytest -v para ver si las pruebas pasaron correctam
  
   definimos el  test login (), en la siguiente linea hacemos una variable en este caso login passed que sea igual a login  y le pasamos los valores corectos es decir el nombre de usuario y la contraseña tal como aparece en la foto.
 
-    ```py
+  ```py
    def test_login_pass():
     login_passes=login("alumnouady","uady1234")
     assert   login_passes 
-    ```
+  ```
 
 
 **paso 4:** 
 
 crearemos otro test pero esta vez para cuando  vaya a ser falso es decir  lo unico que cambiaremos es el nombre de la variable ( de passed a  fails),  el nombre de usuario o la contraseña y el assert le agregaremos el not ¿porque? porque lo que estamos buscando es que la prueba nos retorne a falso y eso lo podemos hacer con el uso del not  
 
-    ```py
+  ```py
 def test_login_fail():
     login_fails=login("alumnouadytete","uady12343412")
     assert not login_fails
-    ```
+   ```
 
 
 ## puntos importantes  a tener en cuenta
