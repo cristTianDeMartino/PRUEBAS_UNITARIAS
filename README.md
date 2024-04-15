@@ -67,7 +67,7 @@
 
 
   ##  1. funcion sum y is_greather_than
-** paso 1:**
+ **paso 1:**
  
   para empezar vamos a crear otra carpeta en la cual crearemos un archivo el cual sera nuestro main(importante poner el .py que es la terminacion de python)
 
@@ -164,7 +164,7 @@ def test_sum_params(input_x, input_y, expected):
    
 ```
   
-paso 2:  
+**paso 2:**  
 
 el imputx y el imputy  indica los 2 valores que espera ( los numeros que se van a sumar) y el parametro expected  es el valor que se espera recibir sin embargo necesita  unos parametros para que pueda probar  mediante pytest tenemos un decorador @pytest.mark.parametrize el cual le insertaremos una serie de parametros en una lista y dentro pondremos duplas con valores( los valores puedes poner los que tu quieras).abajo del parametrize tenemos que  volver  a escribir dentro comillas los imputx y el expected tal que asi :  " input_x, input_y, expected", para que quede mas claro adjunto la foto para que se entienda mejor el orden de cada parametro.
 ```py
@@ -187,7 +187,7 @@ nuevamente volver a ejecutar pytest -v para ver si las pruebas pasaron correctam
 
   ##  5. simular una base de datos para comprobar credenciales
 
-  paso 1:
+  **paso 1:**
 
   primero tenemos que regresar al main para escribir la nueva función. 
 ```py
@@ -202,14 +202,14 @@ nuevamente volver a ejecutar pytest -v para ver si las pruebas pasaron correctam
  esto nos va a regresar verdadero siempre y cuando nuestro username  y nuestra password sean las mismas que hayamos ingresado anteriormente, en caso de que no se cumpla uno de los dos  nos regresaria a falso.
 
 
- paso 2:
+ **paso 2:**
 
  ahora regresamos al test main para hacer la prueba importando en la parte superior (donde  se importaron  el sum y el greather than) para que pueda hacerse la prueba.
  ```py
  from src.main import sum, is_greater_than, __login__, is_odd, is_even
 ```
 
- paso 3: 
+ **paso 3:** 
  
   definimos el  test login (), en la siguiente linea hacemos una variable en este caso login passed que sea igual a login  y le pasamos los valores corectos es decir el nombre de usuario y la contraseña tal como aparece en la foto.
 
@@ -220,7 +220,7 @@ nuevamente volver a ejecutar pytest -v para ver si las pruebas pasaron correctam
     ```
 
 
-paso 4: 
+**paso 4:** 
 
 crearemos otro test pero esta vez para cuando  vaya a ser falso es decir  lo unico que cambiaremos es el nombre de la variable ( de passed a  fails),  el nombre de usuario o la contraseña y el assert le agregaremos el not ¿porque? porque lo que estamos buscando es que la prueba nos retorne a falso y eso lo podemos hacer con el uso del not  
 
