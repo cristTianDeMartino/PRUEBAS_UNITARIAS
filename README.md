@@ -203,35 +203,7 @@ paso 4:
 crearemos otro test pero esta vez para cuando  vaya a ser falso es decir  lo unico que cambiaremos es el nombre de la variable ( de passed a  fails),  el nombre de usuario o la contraseña y el assert le agregaremos el not ¿porque? porque lo que estamos buscando es que la prueba nos retorne a falso y eso lo podemos hacer con el uso del not  (foto)
 
 
-## 6. simular la conexion a una base de datos y el retorno  de una lista
- 
-paso 1:
 
-adentro de la carpeta src vamos a crear  otra carpeta llamada models, despues vamos a crear el documento __init__.py, despues otro documento  que nos hara la funcion de main pero le llamaremos languageMode.py como si tuvieramos un modelo para poder leer lenguajes de programacion ahora dentro de test vamos a crear otra carpeta  llamada models y vamos a repetir el mismo paso anterior solo que el nombre del documento languageMode.py ahora lo llamaremos test_languageModel.
-
-
-paso 2:
-
- tenemos una clase  llamada languageModel  y un metodo de clase llamada get_language que lo unico que hace es retornar una lista de  lenguajes de programacion.  simulamos aqui que nos hemos conectado a una base de datos y esto lo estamos trayendo mediante una consulta. ( foto) 
-
-paso 3:
-
-dentro de test_languageModel vamos a comprobar priemro que  esa lista que  se nos retorne sea distinto  de NONE( el none equivale a la ausencia de un valor)  entonces primero importamos el  languagemodel como lo hemos echo anteriormente despues creamos una funcion llamada test_get_languages_not_none(): (para comprobar que lo que me retorne no sea None)
- seguidamente creamos una variable llamada languange = languageModel.get_languages()  y luego haremos un assert para que language sea diferente de none ( foto)
-
-
- paso 4:
-
- ahora vamos  hacer la misma prueba pero comprobando si tiene elementos por lo tanto  ahora va a ser :def  test_get_languages_has_elements():  y el assert  ahora va a ser :  assert len(languages) >  0  que significa que la longitud de estos lenguajes sea mayor a 0 (foto).
-
-
- paso 5:
-
- copiamos la misma funcion y ahora vamos a comprobar la longitud de cada uno de esos elementos  por lo tanto cambiamos el nombre de la  funcion a : def test_get_languages_check-elements_length(): despues crearemos un for  para cada lenguaje en esta lista de lenguajes vamos hacer un assert de que la longitud de cada uno de estos lenguajes sea mayor a 0 (foto)
-
-  paso 6: 
-  
-  abrir la terminar y ejecutar pytest -v  vamos  a ver que todos han pasado corectamente ya que primero la lista no es NONE despues existen elementos  y tambien cada elemento su longitud es mayor a 0. esto fallaria si por ejemplo uno de los elementos lo quitamos y dejamos una cadena de caracteres vacia. vemos que la 3 prueba fallo porque la longitud de un elemento en particular  ( en este caso   el elemento que borramos) fue 0 por lo tanto fallo. 
 
 
 ## puntos importantes  a tener en cuenta
