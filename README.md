@@ -219,8 +219,6 @@ nuevamente volver a ejecutar pytest -v para ver si las pruebas pasaron correctam
     ```
 
 
-
-
 paso 4: 
 
 crearemos otro test pero esta vez para cuando  vaya a ser falso es decir  lo unico que cambiaremos es el nombre de la variable ( de passed a  fails),  el nombre de usuario o la contraseña y el assert le agregaremos el not ¿porque? porque lo que estamos buscando es que la prueba nos retorne a falso y eso lo podemos hacer con el uso del not  
@@ -231,12 +229,9 @@ def test_login_fail():
     assert not login_fails
 ```
 
-
-
-
 ## puntos importantes  a tener en cuenta
 
-   1. tener mucho cuidado a la hora de hacer los paquetes,asegurarse de que esten en su sitio y en su respectiva carpeta y que tenga todos los signos incluyendo el .py,  si no es el caso te saldria un error de este tipo (foto)
+   1. tener mucho cuidado a la hora de hacer los paquetes,asegurarse de que esten en su sitio y en su respectiva carpeta y que tenga todos los signos incluyendo el .py.
 
   2.  verificar los lugares a la hora de copiar el codigo, al ser python el lugar en el que se encuentra cada variable importa muchisimo
   
@@ -245,13 +240,13 @@ def test_login_fail():
 
 
 
- #  CONCLUSIÓN 
+ ##  CONCLUSIÓN 
 
  en  resumen La evaluación del software se divide en verificación (asegurar que se desarrolle según especificaciones) y validación (comprobar si cumple las necesidades del cliente). Las técnicas incluyen estáticas (revisiones) y dinámicas (pruebas unitarias, de integración, de sistema y de aceptación).  Las pruebas unitarias son fundamentales para garantizar la calidad del software, ya que se enfocan en probar componentes individuales para asegurar su correcto funcionamiento. Esto contribuye a la fiabilidad del producto final y lo convierte en un proyecto mas solido y fiable a la hora de presentarlo al cliente.
 
 
 
 
-  #  REFERENCIAS 
+  ##  REFERENCIAS 
    https://www.youtube.com/watch?v=JZ0TMkwMgp8&ab_channel=UskoKruM2010
    https://docs.pytest.org/en/latest/
