@@ -118,7 +118,7 @@ def test_is_greater_than():
 ahora  abrimos la consola/terminal y ejecutamos pytest (foto) una vez ejecutado el pytest lo que hace es  detectar todos los archivos de prueba y te dice  las pruebas que pasaron y las que no.  ( si agregas  -v al comando pytest te da un resultado mas detallado de todas las pruebas)
 
 ## 3. utilizar las funciones odd y even ( par e impar)
-**paso 1: **
+**paso 1:**
 
 definimos las funciones de odd y even en el main. para el caso del odd sabemos que cualquier numero  dividido entre 2 y que su residuo sea 1 es un numero impar 
 ```py
