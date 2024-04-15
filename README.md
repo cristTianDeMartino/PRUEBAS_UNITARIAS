@@ -231,6 +231,14 @@ def test_login_fail():
    ```
 
 
+##  APLICACION DE PRUEBAS A UN CODIGO 
+
+///////////
+
+
+
+
+
 ## puntos importantes  a tener en cuenta
 
    1. tener mucho cuidado a la hora de hacer los paquetes,asegurarse de que esten en su sitio y en su respectiva carpeta y que tenga todos los signos incluyendo el .py
