@@ -196,7 +196,7 @@ nuevamente volver a ejecutar pytest -v para ver si las pruebas pasaron correctam
          return True
     else:
         return False
-  ```  
+ ```  
 
 
  esto nos va a regresar verdadero siempre y cuando nuestro username  y nuestra password sean las mismas que hayamos ingresado anteriormente, en caso de que no se cumpla uno de los dos  nos regresaria a falso.
@@ -228,7 +228,7 @@ crearemos otro test pero esta vez para cuando  vaya a ser falso es decir  lo uni
 def test_login_fail():
     login_fails=login("alumnouadytete","uady12343412")
     assert not login_fails
-```
+    ```
 
 
 ## puntos importantes  a tener en cuenta
