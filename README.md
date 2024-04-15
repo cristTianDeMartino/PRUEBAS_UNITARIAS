@@ -1,9 +1,17 @@
-- [introducción](#pruebasunitarias)
+  
+
+
 
 # PRUEBAS UNITARIAS
 
   como parte de mi proyecto de fundamentos en ingenieria en software vengo a mostrar la importancia y su implementacion de las pruebas unitarias del software en sus respectivos proyectos sin embargo vamos a retroceder un poco y vamos a  ver en un poco en general  acerca de las pruebas de software y su evaluación del mismo.
-
+## contenido 
+- [introducción](#pruebasunitarias)
+- [requisitos previos](#requisitos_previos)
+- [ejemplo de pruebas unitarias por separado](EJEMPLO_DE_PRUEBAS_UNITARIAS)
+- [aplicacion de pruebas a un codigo](#video)
+- [observaciones](#puntos_a_tomar_en_cuenta)
+- [conclusión](#conclusion)
   # EVALUACION DEL SOFTWARE
 
    a la hora de  evaluar un software existen dos tipos:
