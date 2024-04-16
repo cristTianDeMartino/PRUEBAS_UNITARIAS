@@ -22,11 +22,11 @@
 
    a la hora de  evaluar un software existen dos tipos:
 
-   # verificación:  
+   ## verificación:  
          
    El proceso implica verificar si los productos de una etapa específica del desarrollo de software cumplen con los requisitos establecidos en la fase anterior. El objetivo es determinar si estamos creando el producto de manera correcta, lo que incluye revisar el programa para asegurarnos de que esté en conformidad con sus especificaciones. basicamente es  ver si los productos de la etapa cumplen con los requisitos establecidos o no.
    
-   # validación: 
+   ## validación: 
    
    Proceso de evaluación del SW al final del proceso de desarrollo para asegurar el cumplimiento de necesidades del cliente. ¿Estamos creando el producto correcto?. Revisión del programa conforme a las expectativas del usuario.basicamente al final del proceso se hace una evaluacion para ver si el programa corre perfectamente o tiene errores.
 
@@ -47,7 +47,8 @@
   todas estas pruebas son importantes a la hora de hacer un proyecto de software ya que fuero creadas justamente para la necesidad de garantizar la calidad y fiabilidad de los programas informáticos, sin embargo nosotros  haremos enfasis y hablaremos mas en especifico sobre las pruebas unitarias ya que son una parte muy importante a la hora de probar el software.
 
   # PLAN DE PRUEBAS
-      https://ibb.co/1GsyLrR
+      > ![pruebas](https://private-user-images.githubusercontent.com/142451429/320313893-4077211d-6a70-41ce-a2ad-de448e7c3196.jpg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTMyODM0NDEsIm5iZiI6MTcxMzI4MzE0MSwicGF0aCI6Ii8xNDI0NTE0MjkvMzIwMzEzODkzLTQwNzcyMTFkLTZhNzAtNDFjZS1hMmFkLWRlNDQ4ZTdjMzE5Ni5qcGc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNDE2JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDQxNlQxNTU5MDFaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1jZWRmNGExZjFmNjYzMDQ2ZmMzN2Y2NjU1NWI2MzQ4ZDkxNWY1YjVmOTJjOWJjMGVlMjdhYjQ5YWEyZmNkNTg5JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.pAvbjJo3N_rWaiOcQr68OyXQ63TAGWSWsO1_vZBl9kc)
+
 
 
  # REQUISITOS PREVIOS
