@@ -47,8 +47,8 @@
   todas estas pruebas son importantes a la hora de hacer un proyecto de software ya que fuero creadas justamente para la necesidad de garantizar la calidad y fiabilidad de los programas informáticos, sin embargo nosotros  haremos enfasis y hablaremos mas en especifico sobre las pruebas unitarias ya que son una parte muy importante a la hora de probar el software.
 
   # PLAN DE PRUEBAS
-      ![pruebas](https://github.com/cristTianDeMartino/PRUEBAS_UNITARIAS/assets/142451429/180ec328-ea86-449c-918f-6748cabd092f)
-
+   
+   ![pruebas](https://github.com/cristTianDeMartino/PRUEBAS_UNITARIAS/assets/142451429/180ec328-ea86-449c-918f-6748cabd092f)
 
 
  # REQUISITOS PREVIOS
