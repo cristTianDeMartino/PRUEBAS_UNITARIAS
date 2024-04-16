@@ -242,7 +242,8 @@ def test_login_fail():
 ## puntos importantes  a tener en cuenta
 
    1. tener mucho cuidado a la hora de hacer los paquetes,asegurarse de que esten en su sitio y en su respectiva carpeta y que tenga todos los signos incluyendo el .py
-  2.  verificar los lugares a la hora de copiar el codigo, al ser python el lugar en el que se encuentra cada variable importa muchisimo
+  2.  verificar los lugares a la hora de copiar el codigo, al ser python importa mucho la orientacion.
+  3. 
   
 
 
@@ -257,5 +258,7 @@ def test_login_fail():
 
 
   ##  REFERENCIAS 
+
    https://www.youtube.com/watch?v=JZ0TMkwMgp8&ab_channel=UskoKruM2010
+
    https://docs.pytest.org/en/latest/
