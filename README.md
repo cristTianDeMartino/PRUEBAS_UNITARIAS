@@ -70,12 +70,15 @@
   ##  1. funcion sum y is_greather_than
  **paso 1:**
  
-  para empezar vamos a crear otra carpeta en la cual crearemos un archivo el cual sera nuestro main(importante poner el .py que es la terminacion de python)
+  para empezar vamos a crear otra carpeta( en mi caso la llamare src) en la cual crearemos un archivo el cual sera nuestro main(importante poner el .py que es la terminacion de python)
+
 
  **paso 2:**
  
   vamos a crear otro documento porque lo querremos tomar como paquete por lo que es importante llamarlo :
 __init__.py
+
+![prueba1](https://github.com/cristTianDeMartino/PRUEBAS_UNITARIAS/assets/142451429/74c5551d-c8c3-4b72-b798-0edd44807fe2)
  
 **paso 3:** 
 
@@ -93,7 +96,9 @@ def is_greater_than(number_1, number_2):
 
 **paso 4:**
 
- vamos a crear una subcarpeta  con el nombre test( ya que en esta carpeta haremos las pruebas) y  vamos a repetir el paso 2, es decir vamos a crear un documento que se llame  test_main y  le agregamos el mismo documento para que se convierta en un paquete.(foto)
+ vamos a crear una subcarpeta  con el nombre test( ya que en esta carpeta haremos las pruebas) y  vamos a repetir el paso 2, es decir vamos a crear un documento que se llame  test_main y  le agregamos el mismo documento para que se convierta en un paquete.
+
+![prueba2](https://github.com/cristTianDeMartino/PRUEBAS_UNITARIAS/assets/142451429/1f06638a-16ee-4a6c-90ac-6ceaf9f1061b)
 
 **paso 5:** 
 
