@@ -78,7 +78,7 @@
   vamos a crear otro documento porque lo querremos tomar como paquete por lo que es importante llamarlo :
 __init__.py
 
-![prueba1](https://github.com/cristTianDeMartino/PRUEBAS_UNITARIAS/assets/142451429/74c5551d-c8c3-4b72-b798-0edd44807fe2)
+![prueba1](https://github.com/cristTianDeMartino/PRUEBAS_UNITARIAS/assets/142451429/c2e9ccb8-747c-481a-910b-ddca747f77d6)
  
 **paso 3:** 
 
@@ -98,7 +98,8 @@ def is_greater_than(number_1, number_2):
 
  vamos a crear una subcarpeta  con el nombre test( ya que en esta carpeta haremos las pruebas) y  vamos a repetir el paso 2, es decir vamos a crear un documento que se llame  test_main y  le agregamos el mismo documento para que se convierta en un paquete.
 
-![prueba2](https://github.com/cristTianDeMartino/PRUEBAS_UNITARIAS/assets/142451429/1f06638a-16ee-4a6c-90ac-6ceaf9f1061b)
+
+![prueba2](https://github.com/cristTianDeMartino/PRUEBAS_UNITARIAS/assets/142451429/0334dfc0-7014-4046-aff4-3c42f712b08b)  
 
 **paso 5:** 
 
