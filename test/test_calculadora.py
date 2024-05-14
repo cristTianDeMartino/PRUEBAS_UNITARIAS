@@ -15,8 +15,9 @@ def test_rest():
 def test_mult():
     assert multiplicar_num(2, 2) == 4
     assert multiplicar_num(2, 0) == 0
-    assert multiplicar_num(2, 1) == 0
+    assert multiplicar_num(2, 1) == 2
 
 
 def test_div():
     assert dividir_num(10, 2) == 5
+    assert dividir_num(20, 2) == 10
