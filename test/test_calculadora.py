@@ -20,4 +20,4 @@ def test_mult():
 
 def test_div():
     assert dividir_num(10, 2) == 5
-    assert dividir_num(20, 2) == 10
+    assert dividir_num(20, 2) == 100
