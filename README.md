@@ -240,17 +240,11 @@ def test_login_fail():
 
 ## APLICACION DE PRUEBAS A UN CODIGO
 
-///////////
+https://youtu.be/xXLodcHSAH0
 
 ## APLICACION DE PRUEBAS A UN REPOSITORIO GITHUB
 
-////////////////
-
-## PUNTOS IMPORTANTES A TENER EN CUENTA
-
-1.  tener mucho cuidado a la hora de hacer los paquetes,asegurarse de que esten en su sitio y en su respectiva carpeta y que tenga todos los signos incluyendo el .py
-2.  verificar los lugares a la hora de copiar el codigo, al ser python importa mucho la orientacion.
-3.
+https://youtu.be/1WMTy3c2S54
 
 ## CONCLUSIÓN
 
@@ -261,3 +255,5 @@ en resumen La evaluación del software se divide en verificación (asegurar que 
 https://www.youtube.com/watch?v=JZ0TMkwMgp8&ab_channel=UskoKruM2010
 
 https://docs.pytest.org/en/latest/
+
+https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-python
